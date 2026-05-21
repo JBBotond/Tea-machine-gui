@@ -1,0 +1,10 @@
+@startuml
+Idle: Waiting for input
+Idle -> Interface: Select product
+Interface: Ask for money
+Interface --> Idle: Not enough money
+Interface --> MakeDrink: Enough money
+MakeDrink -> DoneDrink: Poured and waited
+MakeDrink -> MakeDrink: Still making
+DoneDrink -> Idle: Reset
+@enduml
