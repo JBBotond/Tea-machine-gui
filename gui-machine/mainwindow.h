@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "ui_mainwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -16,6 +17,11 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow() override;
+
+private slots:
+    void on_pushButton_clicked();
+
+    void on_listWidget_itemDoubleClicked(QListWidgetItem *item);
 
 private:
     Ui::MainWindow *ui;
