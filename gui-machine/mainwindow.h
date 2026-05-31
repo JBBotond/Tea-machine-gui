@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "ui_mainwindow.h"
+#include "coinAcceptor.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -17,6 +18,8 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow() override;
+
+    CoinAcceptor credit;
 
 private slots:
     void on_pushButton_clicked();

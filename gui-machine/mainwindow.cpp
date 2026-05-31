@@ -5,6 +5,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , credit(0, 0, 100)
 {
     ui->setupUi(this);
     ui->listWidget->setVisible(false);
@@ -27,6 +28,20 @@ void MainWindow::on_pushButton_clicked()
 }
 void MainWindow::on_listWidget_itemDoubleClicked(QListWidgetItem *item)
 {
-    std::cout << item->text().toStdString() << std::endl;
+    std::string widgetText = item->text().toStdString();
+    int coinValue = 0;
+    // debug display in terminal, later add to logs too
+    std::cout << widgetText << std::endl;
+
+    if (widgetText == "5c")            coinValue = 5;
+    else if (widgetText == "10c")      coinValue = 10;
+    else if (widgetText == "20c")      coinValue = 20;
+    else if (widgetText == "50c")      coinValue = 50;
+    else if (widgetText == "1 Euro")   coinValue = 100;
+
+    credit.addBalance(coinValue);
+
+    int currentBalance = credit.getBalance();
+    std::cout << "Current balance: " << currentBalance << std::endl;
 }
 
