@@ -1,0 +1,24 @@
+2026-06-08 18:51:51 [INFO] Application started
+2026-06-08 18:51:51 [INFO] FSM entered state: S_INIT
+2026-06-08 18:51:52 [INFO] User chose to start tea selection
+2026-06-08 18:51:52 [INFO] FSM entered state: S_IDLE
+2026-06-08 18:51:52 [INFO] User selected tea index: 2
+2026-06-08 18:51:53 [INFO] FSM entered state: S_SELECT_TEA
+2026-06-08 18:51:54 [INFO] Coin inserted: 200 cents. New balance: 2
+2026-06-08 18:51:54 [INFO] Coin inserted: 200 cents. New balance: 4
+2026-06-08 18:51:55 [INFO] Payment accepted. Balance: 4 Required: 2.5
+2026-06-08 18:51:55 [INFO] FSM entered state: S_ASK_FOR_MONEY
+2026-06-08 18:51:58 [INFO] FSM entered state: S_MAKE_TEA
+2026-06-08 18:51:58 [INFO] FSM entered state: S_DONE_TEA
+2026-06-08 19:09:56 [INFO] Application started
+2026-06-08 19:09:56 [INFO] FSM entered state: S_INIT
+2026-06-08 19:10:00 [INFO] User chose to start tea selection
+2026-06-08 19:10:00 [INFO] FSM entered state: S_IDLE
+2026-06-08 19:10:02 [INFO] User selected tea index: 3
+2026-06-08 19:10:02 [INFO] FSM entered state: S_SELECT_TEA
+2026-06-08 19:10:04 [INFO] Coin inserted: 200 cents. New balance: 2
+2026-06-08 19:10:04 [INFO] Coin inserted: 200 cents. New balance: 4
+2026-06-08 19:10:06 [INFO] Payment accepted. Balance: 4 Required: 2.75
+2026-06-08 19:10:06 [INFO] FSM entered state: S_ASK_FOR_MONEY
+2026-06-08 19:10:09 [INFO] FSM entered state: S_MAKE_TEA
+2026-06-08 19:10:09 [INFO] FSM entered state: S_DONE_TEA
